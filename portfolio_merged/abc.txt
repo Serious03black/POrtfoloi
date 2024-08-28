@@ -1,0 +1,13 @@
+here we create two div 
+left 50%
+top 50% 
+for long text and 
+left 50 % 
+top 05 for short text
+by top or left ot will create a block so outside of block the text will get hide
+then add them animation and add display overflow to hide 
+========================================================================================
+here we also aded the nav bar and hover to it 
+frist we added the line which is right 0% widht 100% and hover it to widht 0 for bottom line line1 and inverce of it for line 2 ansd added line by span tag 
+=========================================================================================
+merged file of lec 1,2,3 here we merged all animation now from this we add new animation in it 
