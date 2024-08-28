@@ -1,0 +1,11 @@
+#main {
+    width: 100%;
+    height: 100%; /* Use 100vh to ensure it takes up the full viewport height */
+    position: relative;
+   /* Prevent any overflow during the animation */
+}
+.parent{
+    display: block;
+    background-color: yellow;
+    overflow: hidden;
+}

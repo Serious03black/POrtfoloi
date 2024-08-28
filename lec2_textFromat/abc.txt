@@ -1,0 +1,12 @@
+how to create span tag from js 
+fristly we create a h2 tag from html then assign them a class revele then addd js script to add span tag parent child tag in it 
+===================================================
+fristl
+<h1>
+    content
+===================================================
+then js 
+<h1>
+    <span.parent>
+            <span.child>
+                    content

@@ -1,0 +1,8 @@
+here we create two div 
+left 50%
+top 50% 
+for long text and 
+left 50 % 
+top 05 for short text
+by top or left ot will create a block so outside of block the text will get hide
+then add them animation and add display overflow to hide 
