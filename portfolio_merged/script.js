@@ -21,30 +21,38 @@ function reveleToSpan() {
     elem.appendChild(spanParent);
   });
 }
-reveleToSpan();
-var t1 = gsap.timeline();
-t1.from(" .child Span", {
-  x: "500px",
-  ease: Circ.easeInOut,
-  duration: 3,
-  delay: -1,
-});
-t1.
-to(".parent .child", {
-  y: "-100%",
-  ease: Circ.easeInOut,
-  duration: 1,
-  delay: 1,
-})
-.to("#green", {
-    height: "100%",
-    duration: 2,
-    delay: -0.8,
-    ease: Expo.easeInOut,
-  })
-.to("#white", {
-    height: "100%",
-    duration: 2,
-    delay:- 1.8,
-    ease: Expo.easeInOut,
+function loaderAnimation(){
+  var t1 = gsap.timeline();
+  t1.from(" .child Span", {
+    x: "500px",
+    ease: Circ.easeInOut,
+    duration: 3,
+    delay: -1,
   });
+  t1.to(".parent .child", {
+    y: "-100%",
+    ease: Circ.easeInOut,
+    duration: 1,
+    delay: 1,
+  })
+    .to("#green", {
+      height: "100%",
+      duration: 2,
+      delay: -0.8,
+      ease: Expo.easeInOut,
+    })
+    .to("#white", {
+      height: "100%",
+      duration: 2,
+      delay: -1.8,
+      ease: Expo.easeInOut,
+    });
+}
+reveleToSpan();
+loaderAnimation()
+gsap.from("g path", "polyline", {
+  strokeDasharray: 64.68521881103516,
+  strokeDashoffset: 64.68521881103516,
+  duration: 1,
+  ease: "easeInOUt",
+});
