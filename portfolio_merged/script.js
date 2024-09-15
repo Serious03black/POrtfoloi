@@ -21,30 +21,58 @@ function reveleToSpan() {
     elem.appendChild(spanParent);
   });
 }
-reveleToSpan();
-var t1 = gsap.timeline();
-t1.from(" .child Span", {
-  x: "500px",
-  ease: Circ.easeInOut,
-  duration: 3,
-  delay: -1,
-});
-t1.
-to(".parent .child", {
-  y: "-100%",
-  ease: Circ.easeInOut,
-  duration: 1,
-  delay: 1,
-})
-.to("#green", {
-    height: "100%",
-    duration: 2,
-    delay: -0.8,
-    ease: Expo.easeInOut,
-  })
-.to("#white", {
-    height: "100%",
-    duration: 2,
-    delay:- 1.8,
-    ease: Expo.easeInOut,
+function loaderAnimation() {
+  var t1 = gsap.timeline();
+  t1.from(" .child Span", {
+    x: "500px",
+    ease: Circ.easeInOut,
+    duration: 3,
+    delay: -1,
   });
+  t1.to(".parent .child", {
+    y: "-100%",
+    ease: Circ.easeInOut,
+    duration: 1,
+    delay: 1,
+  })
+    .to(".row .row1,.row .text", {
+      top: "0px",
+      duration: 2,
+      ease: Expo.easeInOut,
+    })
+    .to("#green", {
+      height: "100%",
+      duration: 2,
+      delay: -0.8,
+      ease: Expo.easeInOut,
+    })
+    .to("#white", {
+      height: "100%",
+      duration: 2,
+      delay: -1.8,
+      ease: Expo.easeInOut,
+    });
+  // visual effect to visual svg
+}
+function visual() {
+  document
+    .querySelectorAll("#Visual g path,#Visual g polyline")
+    .forEach(function (e) {
+      let length = e.getTotalLength();
+      e.style.strokeDasharray = length + "px";
+      e.style.strokeDashoffset = length + "px";
+    });
+
+  gsap.to(" #Visual g path, #Visual g polyline", {
+    strokeDashoffset: 0,
+    duration: 2,
+    ease: "expo.power",
+    delay: 5,
+  });
+}
+
+// load the function
+reveleToSpan();
+loaderAnimation();
+visual();
+

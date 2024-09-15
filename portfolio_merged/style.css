@@ -15,7 +15,7 @@ width: 100%;
     overflow: hidden;
 }
 #loader{
-    /* display: none; */
+    display: none; 
     width: 100%;
     height: 100%;
     background-color: #111;
@@ -51,7 +51,6 @@ align-items: center;
     font-size:2vw ;
     font-weight: 500;
 }
-
 #topheading{
     text-align: center;
     text-transform: uppercase;
@@ -66,7 +65,7 @@ align-items: center;
     background-color: #14cf93; */
 /* } */
 #green{
-    /* display: none; */
+     display: none; 
     background-color: rgb(31, 240, 20); /* Yellow */
     width: 100%;
     height: 0; /* Start with 0 height */
@@ -75,7 +74,7 @@ align-items: center;
     left: 0;
 }
 #white{
-    /* display: none; */
+    /* display: none;  */
     background-color: rgb(255, 255, 255); /* Blue */
     width: 100%;
     height: 0; /* Start with 0 height */
@@ -140,4 +139,171 @@ div nav a .sample{
    color: white;
    display: inline-block;
    position: absolute;
+}
+.row {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12vw;
+  padding-right: 12vw;
+  margin-top: 4vw;
+  overflow: hidden;
+}
+.row1,
+.text {
+  top: 1000px;
+  display: inline-block;
+  position: relative;
+}
+#row2 {
+  font-size: 150px;
+  width: 400px;
+  padding-right: 100px;
+  /* font-weight: 10px;  */
+}
+.row h1 {
+  font-size: 11vw;
+  font-weight: 500;
+  /* overflow: hidden; */
+}
+.row h5 {
+  opacity: 0.4;
+  position: relative;
+}
+.row .text {
+  margin: 0vw;
+}
+.row:nth-child(2) {
+  margin-top: 0;
+}
+.row svg {
+  height: 100px;
+  margin: 0 6vw;
+}
+pATH,
+polyline {
+  stroke: #0ca072;
+}
+
+#imagery {
+  margin-top: 16vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vw;
+  width: 100%;
+  align-items: center;
+  padding: 15vw 7vw;
+}
+#imagery #imglef {
+  width: 30%;
+  height: auto;
+}
+#imglef h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 2.4vw;
+  color: black;
+}
+#imglef h1 span {
+  color: rgb(56, 181, 123);
+  font-family: serif;
+  font-style: italic;
+  font-weight: 100;
+}
+.imgrig {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 60%;
+  height: 300px;
+}
+
+.imgrig .ingcontnr {
+  width: 30vw;
+  height: 35vw;
+  border-radius: 1vw;
+  position: absolute;
+  background-color: red;
+}
+.imgrig .ingcontnr:nth-child(1) {
+  transform: translate(-30%, -10%) rotate(-25deg);
+  background-size: cover;
+  background-position: center;
+  background-image: url(christopher-campbell-rDEOVtE7vOs-unsplash.jpg);
+  filter: grayscale(100);
+}
+.imgrig .ingcontnr:nth-child(2) {
+  transform: translate(-10%, -0%) rotate(-15deg);
+  background-size: cover;
+  background-position: center;
+  background-image: url(kimson-doan-HD8KlyWRYYM-unsplash.jpg);
+  filter: grayscale(100);
+}
+.imgrig .ingcontnr:nth-child(3) {
+  transform: translate(0%, 10%) rotate(-0deg);
+  background-size: cover;
+  background-position: center;
+  background-image: url(aiony-haust-3TLl_97HNJo-unsplash.jpg);
+  filter: grayscale(100);
+}
+.imgrig .ingcontnr:hover {
+  filter: grayscale(0);
+}
+#work {
+  padding-top: 200px;
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: 75vh;
+}
+#work::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  top: -75px;
+  background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+}
+.workrow {
+  font-size: 50px;
+  /* text-align: center; */
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 12vw;
+}
+.o-ui-arrow {
+  transform: rotate(90deg);
+}
+.feat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#image {
+  justify-content: space-between;
+  align-items: baseline;
+  display: flex;
+  margin-top: 6vw;
+  position: relative;
+  width: 100%;
+  padding: 0 5vw;
+}
+.cnt {
+  width: 55%;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.cnt #img {
+  width: 105%;
+}
+.cnt1 {
+  width: 55%;
+}
+.cnt2 {
+  width: 28%;
 }
