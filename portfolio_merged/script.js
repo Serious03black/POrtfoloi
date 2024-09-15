@@ -21,7 +21,11 @@ function reveleToSpan() {
     elem.appendChild(spanParent);
   });
 }
+<<<<<<< HEAD
 function loaderAnimation() {
+=======
+function loaderAnimation(){
+>>>>>>> 8aa567c793058ac8f83ae6339b4220f390db905e
   var t1 = gsap.timeline();
   t1.from(" .child Span", {
     x: "500px",
@@ -35,11 +39,14 @@ function loaderAnimation() {
     duration: 1,
     delay: 1,
   })
+<<<<<<< HEAD
     .to(".row .row1,.row .text", {
       top: "0px",
       duration: 2,
       ease: Expo.easeInOut,
     })
+=======
+>>>>>>> 8aa567c793058ac8f83ae6339b4220f390db905e
     .to("#green", {
       height: "100%",
       duration: 2,
@@ -52,6 +59,7 @@ function loaderAnimation() {
       delay: -1.8,
       ease: Expo.easeInOut,
     });
+<<<<<<< HEAD
   // visual effect to visual svg
 }
 function visual() {
@@ -76,3 +84,14 @@ reveleToSpan();
 loaderAnimation();
 visual();
 
+=======
+}
+reveleToSpan();
+loaderAnimation()
+gsap.from("g path", "polyline", {
+  strokeDasharray: 64.68521881103516,
+  strokeDashoffset: 64.68521881103516,
+  duration: 1,
+  ease: "easeInOUt",
+});
+>>>>>>> 8aa567c793058ac8f83ae6339b4220f390db905e
